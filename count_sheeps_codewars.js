@@ -14,6 +14,13 @@ The correct answer would be 17.
 Hint: Don't forget to check for bad values like null/undefined
 */
 
-function countSheeps(arrayOfSheep) {
-  // TODO May the force be with you
+const countSheeps = (arrayOfSheep) => {
+  let total = 0;
+  for(let i = 0; i < arrayOfSheep.length; i++) {
+    if(arrayOfSheep[i] === true) {
+      total++;
+    }
+  }
+
+  return total;
 }
